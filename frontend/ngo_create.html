@@ -32,5 +32,31 @@
             <p class="signup-text">Don't have an account? <a href="#">Sign Up!</a></p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("register-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let response = await fetch("http://127.0.0.1:8000/ngo/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ username, email, password })
+            });
+
+            let data = await response.json();
+            if (response.ok) {
+                alert("User registered successfully!");
+            } else {
+                alert("Error: " + JSON.stringify(data));
+            }
+        });
+    </script>
+
 </body>
 </html>

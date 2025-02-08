@@ -26,5 +26,31 @@
             <p class="signup-text">Don't have an account? <a href="ngo_create.html">Sign Up!</a></p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+    
+            let username = document.getElementById("login-username").value;
+            let password = document.getElementById("login-password").value;
+    
+            let response = await fetch("http://127.0.0.1:8000/users/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ username, password })
+            });
+    
+            let data = await response.json();
+            if (response.ok) {
+                alert("Login successful!");
+                localStorage.setItem("access_token", data.access);  // Store JWT token
+            } else {
+                alert("Error: " + JSON.stringify(data));
+            }
+        });
+    </script>
+    
 </body>
 </html>

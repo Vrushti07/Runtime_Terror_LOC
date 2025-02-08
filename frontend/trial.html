@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #d9dea8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #2d572c;
+            color: white;
+            padding: 15px 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .grid-item {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .top-left { background-color: #6ba12a; grid-area: 1 / 1 / 2 / 2; }
+        .top-right { background-color: #e91e63; grid-area: 1 / 3 / 2 / 4; }
+        .bottom-left { background-color: #00bcd4; grid-area: 3 / 1 / 4 / 2; }
+        .bottom-right { background-color: #4caf50; grid-area: 3 / 3 / 4 / 4; }
+        .center-circle {
+            background-color: white;
+            color: black;
+            grid-area: 2 / 2 / 3 / 3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Waste Management</h1>
+    </header>
+    
+    <main class="grid-container">
+        <div class="grid-item top-left">
+            <h2>70+ million</h2>
+            <p>tons of food are wasted per year in the US</p>
+        </div>
+        <div class="grid-item top-right">
+            <h2>90%</h2>
+            <p>of what restaurants throw out could be reused or composted</p>
+        </div>
+        
+        <div class="center-circle">
+            <h2>Food Waste in Restaurants</h2>
+            <p>Reducing food waste is crucial for sustainability</p>
+        </div>
+        
+        <div class="grid-item bottom-left">
+            <h2>15%</h2>
+            <p>of all the food waste in landfills comes from restaurants</p>
+        </div>
+        <div class="grid-item bottom-right">
+            <h2>34%</h2>
+            <p>of methane gas is produced from food rotting in landfills</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Join the movement. Reduce food waste today!</p>
+    </footer>
+</body>
+</html>

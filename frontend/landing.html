@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title of Your App</title>
     <link rel="stylesheet" href="landing_style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Title of Our App</h1>  <nav>
+    <header class="navbar">
+        <h1>HungerLink</h1>  <nav>
             <ul>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#about-us">About Us</a></li>
                 <!-- <li><a href="#">Donor Login</a></li>
                 <li><a href="#">NGO Login</a></li> -->
-                <li><a href="#">Help and Support</a></li>
+                <li><a href="#hns">Help and Support</a></li>
             </ul>
         </nav>
     </header>
@@ -89,8 +94,8 @@
 
             <!-- Login Buttons -->
             <div class="buttons">
-                <a href="#" class="btn">Donor Login</a>
-                <a href="#" class="btn">NGO Login</a>
+                <a href="donor_login.html" class="btn">Donor Login</a>
+                <a href="ngo_login.html" class="btn">NGO Login</a>
             </div>
         </div>
 
@@ -101,7 +106,7 @@
     </main>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about-us">
         <h2>About Us</h2>
         <p>
             Our mission is to make sure that no good food goes to waste while millions go hungry.
@@ -192,13 +197,13 @@
 
                 <div class="footer-contact">
                     <h3>GET IN TOUCH</h3>
-                    <button class="support-btn">Help and Support</button>
+                    <button class="support-btn" id="hns">Help and Support</button>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>
+            <p color="white">
                 &copy; 2025 Your Company | All Rights Reserved
             </p>
         </div>

@@ -8,6 +8,16 @@ body {
             align-items: center;
             height: 100vh;
         }
+        .header{
+            width: 100%;
+            text-align: center;
+            background-color: #d0cc99; /* Matching the theme */
+            padding: 15px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+        }
         .container {
             background-color: #bdbd85;
             padding: 20px;
@@ -15,21 +25,23 @@ body {
             display: flex;
             align-items: center;
             width: 80%;
+            height: 80vh;
             max-width: 900px;
         }
         .form-section {
             flex: 1;
             padding: 20px;
         }
-        .image-section {
+        .image-container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .image-section img {
-            max-width: 100%;
+        .image-container img {
+            max-width: 90%;
             border-radius: 10px;
+            padding-left: 20px;
         }
         h1 {
             text-align: center;
@@ -40,6 +52,7 @@ body {
             font-weight: bold;
             display: block;
             margin-top: 10px;
+            font-size: 30px;
         }
         input {
             width: 100%;

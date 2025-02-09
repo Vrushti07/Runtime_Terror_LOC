@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dde5b6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background: #f5f5dc;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #5b7833;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 40px;
+    color: #2c5f2d; /* Center aligns the text */
+    width: 100%; /* Ensures it takes full width */
+    display: block; /* Ensures proper alignment */
+}
+
+.name {
+    font-weight: bold;
+    color: #c6c319;
+}
+
+/* Sidebar Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #2c5f2d;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4020;
+}
+
+/* Main Content */
+.main-content {
+    width: 60%;
+    padding: 40px;
+    position: relative;
+    text-align:justify;
+    height: 70vh;
+}
+
+/* Text Content */
+.text-content {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 130px;
+    font-weight: bold;
+    color: #3e2723;
+    margin-bottom: 10px;
+}
+
+.donation-summary {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: rgb(208, 132, 17);
+}
+
+/* Food Image */
+.food-image-container {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 300px;
+    max-width: 100%;
+    transform: scale(1.3); /* Scales the image by 30% */
+    transition: transform 0.3s ease-in-out; /* Smooth effect */
+
+}
+
+.food-image {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+
+    .food-image-container {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .food-image {
+        width: 250px;
+    }
+}

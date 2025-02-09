@@ -1166,3 +1166,69 @@ body {
     width: 98%;
     height: 2.5px;
 }
+/* Main container for leaderboard and image */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Left Section (Leaderboard) */
+.left-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Leaderboard Styling */
+.leaderboard {
+    text-align: center;
+    width: 100%;
+}
+
+.leaderboard h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.leaderboard img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Right Section (Existing Image) */
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-section img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .leaderboard img, .right-section img {
+        width: 250%;
+        max-width: 400;
+    }
+}

@@ -222,3 +222,11 @@ h3 {
     font-family: 'Comic Sans MS', sans-serif;
     text-transform: uppercase;
 }
+/* Ensure all link states inherit the parent's color */
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none; /* Optional: remove underline if desired */
+}
